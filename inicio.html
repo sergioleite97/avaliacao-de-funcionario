@@ -21,13 +21,19 @@
             <div class="media-body">
               <h4 class="mt-0">Sérgio Leite</h4>
               <p class="mb-0">Product Owner</p>
-              <a href="#" class="mb-0">Sair</a>
+              <a href="login.html" class="mb-0">Sair</a>
             </div>
           </div>
         </div>
       </div>
 
       <br><br><br>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Início</li>
+        </ol>
+      </nav>
 
       <div class="row">
         <div class="col-md">
@@ -36,6 +42,7 @@
             <div class="card-body">
               <div class="text-center">
                 <canvas id="myChart" width="400" height="400"></canvas>
+                <a href="minha-avaliacao.html" role="button" class="btn btn-outline-primary">Ver detalhes</a>
               </div>
             </div>
           </div>
@@ -48,12 +55,14 @@
                 <a href="#" class="list-group-item list-group-item-action">
                   <div class="media">
                     <img height="48px" src="https://ui-avatars.com/api/?name=Alexandre%20Zelante" class="align-self-center mr-3" alt="Alexandre Zelante">
-                    <div class="media-body d-flex justify-content-between align-items-center">
+                    <div class="media-body">
                       <div>
-                        <h5 class="mt-0">Alexandre Zelante</h5>
+                        <h5 class="mt-0">
+                          Alexandre Zelante
+                          <span class="badge badge-success float-right">4.7</span>
+                        </h5>
                         <p class="mb-0">Scrum Master / Desenvolvedor</p>
                       </div>
-                      <span class="badge badge-primary badge-pill">14</span>
                     </div>
                   </div>
                 </a>
@@ -61,7 +70,10 @@
                   <div class="media">
                     <img height="48px" src="https://ui-avatars.com/api/?name=Igor%20Antun" class="align-self-center mr-3" alt="Igor Antun">
                     <div class="media-body">
-                        <h5 class="mt-0">Igor Antun</h5>
+                        <h5 class="mt-0">
+                          Igor Antun
+                          <span class="badge badge-warning float-right">3.2</span>
+                        </h5>
                         <p class="mb-0">Desenvolvedor</p>
                     </div>
                   </div>
@@ -70,7 +82,10 @@
                   <div class="media">
                     <img height="48px" src="https://ui-avatars.com/api/?name=Yuri%20Vinicius" class="align-self-center mr-3" alt="Yuri Vinicius">
                     <div class="media-body">
-                        <h5 class="mt-0">Yuri Vinicius</h5>
+                        <h5 class="mt-0">
+                          Yuri Vinicius
+                          <span class="badge badge-success float-right">4.3</span>
+                        </h5>
                         <p class="mb-0">Desenvolvedor</p>
                     </div>
                   </div>
@@ -103,7 +118,7 @@
           labels: ['Desempenho', 'Profissionalismo', 'Personalidade', 'Ética', 'Liderança'],
           datasets: [{
             label: 'Avaliação',
-            data: [4, 4, 3, 5, 2],
+            data: [3.9, 2.8, 4.2, 4.7, 3.4],
           }]
         },
         options: {
