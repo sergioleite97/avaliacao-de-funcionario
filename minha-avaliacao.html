@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Início - Avaliação</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="container">
+      <br><br><br>
+
+      <div class="row">
+        <div class="col-sm">
+          <div class="media">
+            <img height="88" src="https://ui-avatars.com/api/?name=Sérgio%20Leite" class="align-self-center mr-3" alt="Sérgio Leite">
+            <div class="media-body">
+              <h5 class="mt-0">Sérgio Leite</h5>
+              <p class="mb-0">Product Owner</p>
+              <a href="login.html" class="mb-0">Sair</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br><br><br>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="inicio.html">Início</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Minha avaliação</li>
+        </ol>
+      </nav>
+
+      <div class="row">
+        <div class="col-md">
+          <div class="card">
+            <h5 class="card-header">Minha avaliação</h5>
+            <div class="card-body">
+              <div class="text-center">
+                <canvas id="myChart" width="400" height="400"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card">
+            <h5 class="card-header">Competências</h5>
+            <div class="card-body">
+              <div class="accordion" id="competencias">
+                <div class="card">
+                  <div class="card-header" id="headingDesempenho">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseDesempenho" aria-expanded="false" aria-controls="collapseDesempenho">
+                        Desempenho
+                      </button>
+                      <span class="badge badge-success float-right">3.9</span>
+                    </h2>
+                  </div>
+                  <div id="collapseDesempenho" class="collapse" aria-labelledby="headingDesempenho" data-parent="#competencias">
+                    <div class="card-body">
+                      <h5>Eficácia</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <hr>
+                      <h5>Eficiência</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <hr>
+                      <h5>Autonomia e sensatez</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingProfissionalismo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseProfissionalismo" aria-expanded="false" aria-controls="collapseProfissionalismo">
+                        Profissionalismo
+                      </button>
+                      <span class="badge badge-danger float-right">2.8</span>
+                    </h2>
+                  </div>
+                  <div id="collapseProfissionalismo" class="collapse" aria-labelledby="headingProfissionalismo" data-parent="#competencias">
+                    <div class="card-body">
+                      <h5>Responsabilidade</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <hr>
+                      <h5>Pontualidade</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <hr>
+                      <h5>Seriedade</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <hr>
+                      <h5>Confiabilidade</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <hr>
+                      <h5>Comprometimento</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingPersonalidade">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsePersonalidade" aria-expanded="false" aria-controls="collapsePersonalidade">
+                        Personalidade
+                      </button>
+                      <span class="badge badge-success float-right">4.2</span>
+                    </h2>
+                  </div>
+                  <div id="collapsePersonalidade" class="collapse" aria-labelledby="headingPersonalidade" data-parent="#competencias">
+                    <div class="card-body">
+                      <h5>Estabilidade emocional</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <hr>
+                      <h5>Empatia</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <hr>
+                      <h5>Apresentação</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <hr>
+                      <h5>Energia</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <hr>
+                      <h5>Sociabilidade</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingEtica">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEtica" aria-expanded="false" aria-controls="collapseEtica">
+                        Ética
+                      </button>
+                      <span class="badge badge-success float-right">4.7</span>
+                    </h2>
+                  </div>
+                  <div id="collapseEtica" class="collapse" aria-labelledby="headingEtica" data-parent="#competencias">
+                    <div class="card-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingLideranca">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseLideranca" aria-expanded="false" aria-controls="collapseLideranca">
+                        Liderança
+                      </button>
+                      <span class="badge badge-warning float-right">3.4</span>
+                    </h2>
+                  </div>
+                  <div id="collapseLideranca" class="collapse" aria-labelledby="headingLideranca" data-parent="#competencias">
+                    <div class="card-body">
+                      <h5>Tomada de decisão</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <hr>
+                      <h5>Exemplo</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <hr>
+                      <h5>Critério</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <hr>
+                      <h5>Seleção</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+
+    <script>
+      var ctx = document.getElementById('myChart').getContext('2d');
+
+      var myChart = new Chart(ctx, {
+        type: 'radar',
+        data: {
+          labels: ['Desempenho', 'Profissionalismo', 'Personalidade', 'Ética', 'Liderança'],
+          datasets: [{
+            label: 'Avaliação',
+            data: [3.9, 2.8, 4.2, 4.7, 3.4],
+          }]
+        },
+        options: {
+          scale: {
+            ticks: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
