@@ -30,7 +30,8 @@
         var senha = document.forms['loginForm']['inputPassword'].value;
 
         if (usuario === 'admin' && senha == 'admin') {
-          return window.location.href = 'inicio.html'
+          window.location.href = 'inicio.html'
+          return false
         } else {
           alert('Usuário e/ou senha incorretos')
           return false
