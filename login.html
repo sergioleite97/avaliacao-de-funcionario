@@ -13,19 +13,30 @@
   </head>
 
   <body>
-    <form class="form-signin">
+    <form name="loginForm" class="form-signin" onsubmit="return validateForm()">
       <h1 class="h3 mb-3 font-weight-normal " style="text-align: center;">Login</h1>
-      <label for="inputEmail" class="sr-only">Login</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Login" required autofocus>
+      <small>Usuário: admin</small>
+      <label for="inputUser" class="sr-only">Usuário</label>
+      <input type="text" id="inputUser" class="form-control" placeholder="Usuário" required autofocus>
+      <small>Senha: admin</small>
       <label for="inputPassword" class="sr-only">Senha</label>
       <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Lembrar senha
-        </label>
-      </div>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
     </form>
+
+    <script>
+      function validateForm() {
+        var usuario = document.forms['loginForm']['inputUser'].value;
+        var senha = document.forms['loginForm']['inputPassword'].value;
+
+        if (usuario === 'admin' && senha == 'admin') {
+          return window.location.href = 'inicio.html'
+        } else {
+          alert('Usuário e/ou senha incorretos')
+          return false
+        }
+      }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
